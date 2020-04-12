@@ -1,0 +1,105 @@
+*, *:before, *:after, *:hover
+  box-sizing: border-box
+
+html
+  font-size: 12px
+
+body
+  font-family: 'Ubuntu', sans-serif
+  font-size: 1rem
+  margin: 0
+
+button
+  cursor: pointer
+
+img
+  max-width: 100%
+
+a
+  text-decoration: none
+  &:hover
+    cursor: pointer
+
+.hidden
+    display: none
+
+.section
+  padding: 60px 0
+  width: 100%
+  display: flex
+  justify-content: center
+  &__services
+    margin-bottom: 8rem
+  &--dark
+    padding-top: 11rem
+    padding-left: 2rem
+    background-color: $dark
+    color: $light
+  &-title
+    text-align: center
+    &--light
+      color: $light
+    &--left
+      text-align: left
+    &__heading
+      &--primary
+        color: $primary
+        font-size: 1.929rem
+        line-height: 2.643rem
+        letter-spacing: -0.07rem
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        background-color: $primary
+        width: 92px
+        height: 1px
+        margin-left: 2.8rem
+    &__text
+      &--projects
+        text-transform: none
+        font-family: 'Futura Book'
+        font-size: 1.286rem
+        line-height: 2.07rem
+        max-width: 31.57rem
+        margin-bottom: 2rem
+    &__image
+      display: flex
+      align-items: center
+      justify-content: center
+      &::before, &::after
+        content: ''
+        width: 32px
+        height: 2px
+        border-radius: 30px
+        background-color: $primary
+      & img
+        margin-left: 10px
+        margin-right: 10px
+  &ThankYouPage
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $dark
+    min-width: 100vw
+    min-height: 100vh
+.thankYouPage
+  &Container
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 2rem
+    width: 50vw
+    height: 50vh
+    background-color: $black
+    box-shadow: 0 0 20px rgba($primary, 0.3)
+  &Content
+    color: $primary
+    font-size: 14px
+    text-align: center
+    max-width: 80%
+    margin-bottom: 3rem
+
+

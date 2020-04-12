@@ -1,0 +1,80 @@
+.cases
+  width: 100%
+  background-color: $light
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  &__section
+    padding: 0
+    margin: 0
+    padding-top: 7rem
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    margin: 0
+    padding: 0
+    font-family: 'Ubuntu', serif
+    font-weight: 700
+    font-size: 2.625rem
+    letter-spacing: normal
+    word-spacing: normal
+    line-height: 2.3321rem
+    color: #2c2c2d
+    &__text
+      width: 100%
+      max-width: 50rem
+      margin: 0
+      padding: 0
+      padding-top: 1.7rem
+      padding-bottom: 2.7rem
+      font-family: 'Ubuntu', serif
+      font-weight: 400
+      font-size: 1rem
+      letter-spacing: normal
+      word-spacing: normal
+      line-height: 1.375rem
+      text-align: center
+      color: #2c2c2d
+  &__slider
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding-bottom: 3rem
+    &__button
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 2rem
+      height: 3.7391rem
+    &__image
+      display: none
+      &:first-of-type
+        display: block
+      &__container
+        width: 100%
+        height: 100%
+        max-width: 60.375rem
+        height: 31.625rem
+        margin-left: 3.1875rem
+        margin-right: 3.1875rem
+        display: flex
+        justify-content: center
+        align-items: center
+
+.slider
+  &__button
+    width: 100%
+    height: 100%
+    max-width: 1.4375rem
+    max-height: 2.6875rem
+    transition: max-width 0.3s
+    transition: max-height 0.3s
+    &:hover
+      max-width: 2rem
+      max-height: 3.7391rem
+      cursor: pointer

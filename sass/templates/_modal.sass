@@ -1,0 +1,118 @@
+.modal__success, .modal__error
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: transparent
+  z-index: 500
+  display: flex
+  align-items: center
+  justify-content: center
+.modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($dark, 0.5)
+  z-index: 500
+  display: flex
+  align-items: center
+  justify-content: center
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 2.4375rem 3.125rem 1.75rem 3.125rem
+    background-color: $light
+    width: 100%
+    max-width: 23.1875rem
+    box-shadow: 0 0 7px 6px rgba(34, 34, 34, 0.05)
+  &--visibility
+    opacity: 1
+    visibility: visible
+  &__dialog
+    position: relative
+    background: $light
+    padding: 2.4375rem 3.125rem 1.75rem 3.125rem
+    color: $light
+    width: 100%
+    max-width: 23.1875rem
+    box-shadow: 0 0 7px 6px rgba(34, 34, 34, 0.05)
+  &__title
+    font-family: 'Yeseva One', cursive
+    font-size: 1.357rem
+    line-height: 140%
+    text-align: center
+    margin: 0
+    margin-bottom: 1.9rem
+  &__text
+    margin-bottom: 3rem
+    font-size: 1.5rem
+    font-family: 'Ubuntu', serif
+    font-size: 1rem
+    color: #878585
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    max-height: 10.375rem
+  &__input
+    &-group
+      display: flex
+      flex-direction: column
+      position: relative
+      margin-bottom: 1.12rem
+      width: 100%
+  &__button
+    width: 100%
+    max-width: 11.8125rem
+    &--OK
+      padding: 0.5rem
+      font-size: 1rem
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+    width: 28px
+    height: 28px
+    background: #e3fbdd url('../img/icons/x-circle.svg') no-repeat center
+    border-radius: 50%
+    border: none
+    margin: 12px
+    cursor: pointer
+div
+  &.invalid
+    position: absolute
+    background-color: rgba(red, 0.3)
+    color: $light
+    text-shadow: $dark 0 0 5px
+    text-align: center
+    padding: 0
+    right: 0
+    bottom: 0
+    &--modal
+      position: absolute
+      background-color: rgba(red, 0.3)
+      color: $light
+      text-shadow: $dark 0 0 5px
+      text-align: center
+      font-size: 0.8rem
+      padding: 0
+      right: 0
+      bottom: -0.8rem
+
+
+
+

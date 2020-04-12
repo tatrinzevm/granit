@@ -1,0 +1,365 @@
+@media screen and (max-width: 5000px)
+  .burger-menu
+    display: none
+  .menu__logo--mobile
+    display: none
+@media screen and (max-width: 1400px)
+  html
+    font-size: 14px
+  .section
+    &__services
+      margin-bottom: 0
+  .hero
+    &__content
+      padding-left: 2rem
+      padding-right: 2rem
+    &__aside
+      left: 1rem
+    &__title
+      font-size: 2.5rem
+      letter-spacing: normal
+  .indicators
+    background-size: contain
+    &__box
+      padding: 1.5rem
+      max-height: 10rem
+      top: -5rem
+  .question
+    &__section
+      background: $light url('../img/img-bg-question.jpg') no-repeat center / contain
+      background-position-x: center
+      background-size: auto 100%
+      background-clip: border-box
+  .container
+    margin-left: 3rem
+    margin-right: 3rem
+  .burger-menu
+    display: none
+@media screen and ( max-width: 1200px)
+  .container
+    padding-left: 3rem
+    padding-right: 3rem
+  .header
+    padding-left: 0
+    padding-right: 0
+    &__container
+      padding-left: 0
+      padding-right: 0
+  .hero
+    &__aside
+      left: 1rem
+    &__title
+      font-size: 2rem
+      letter-spacing: normal
+    &__text
+      font-size: 1rem
+  .indicators
+    background-size: contain
+    &__box
+      padding: 1.5rem
+      max-height: 10rem
+      top: -5rem
+  .news
+    &__slider
+      padding-left: 3rem
+  
+  .row
+    justify-content: flex-start
+    align-items: center
+    padding-left: 2rem
+    padding-right: 2rem
+  .col-30
+    flex-basis: 50%
+    &:nth-child(3n+1)
+      justify-content: center
+      align-items: center
+    &:nth-child(3n+2)
+      justify-content: center
+      align-items: center
+    &:nth-child(3n+3)
+      justify-content: center
+      align-items: center
+  .question
+    &__container
+      padding-left: 0
+    &__title
+      font-size: 1.5rem
+    &__link
+      &--title
+        font-size: 1.5rem
+  .burger-menu
+    display: none
+  .menu__logo--mobile
+    display: none
+
+@media screen and ( max-width: 992px)
+  html
+    font-size: 12px
+  .header
+    z-index: 300
+    &__container
+      padding-left: 2rem
+      padding-right: 2rem
+    &__menu
+      display: none
+  .burger-menu
+    display: flex
+  .menu__logo--mobile
+    display: flex
+  .nav
+    &__container
+      align-items: flex-ends
+  .hidden
+    display: none
+
+  .hero
+    background: url('../img/hero-bg-img-mobile.jpg') no-repeat center / cover
+    &__aside
+      display: none
+      &::after
+        display: none
+    &__main-img
+      &__container
+        display: none
+    &__content
+      padding-left: 0
+      padding-right: 0
+  .indicators
+    background-size: contain
+    max-width: 100%
+    &__box
+      position: static
+      padding: 1.5rem
+      max-height: 10rem
+  .advantages
+    &__video
+      padding-top: 0
+  .cost-calc
+    &__section
+      padding: 0
+    &__container
+      padding: 0
+      max-width: 100%
+      max-height: 100%
+    &__wrap
+      flex-basis: 60%
+      padding-top: 3rem
+      padding-bottom: 3rem
+  .cases
+    &__section
+      padding-top: 3rem
+  .reviews
+    &__section
+      padding-top: 4rem
+    &__container
+      padding-left: 1rem
+      padding-right: 1rem
+    &__slider
+      &__card
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &__container
+          margin-left: 1rem
+          margin-right: 1rem
+  .news
+    &__slider
+      padding-left: 0
+      &__card
+        height: auto
+        display: flex
+        &__container
+          height: auto
+          margin-bottom: 1rem
+    &__img
+      &__container
+        flex-basis: 50%
+    &__desc
+      position: static
+  .question
+    &__section
+      background-size: cover
+      background-position-x: 50%
+      background-position-y: center
+      padding-top: 0
+      padding-bottom: 2.5rem
+    &__container
+      max-width: 100%
+      max-height: 100%
+      padding-left: 2rem
+      justify-content: space-between
+    &__content
+      margin-right: 7rem
+    &__wrap
+      max-width: 100%
+  .footer
+    &__container
+      padding-top: 2rem
+      padding-bottom: 2rem
+  .container
+    margin-left: 0
+    margin-right: 0
+
+
+@media screen and (max-width: 767px)
+  .header
+    padding: 0
+    &__container
+      padding-left: 1rem
+      padding-right: 1rem
+  .hero
+    background: url('../img/hero-bg-img-mobile.jpg') no-repeat center / cover
+    &__container
+      padding-top: 4rem
+  .indicators
+    &__card
+      align-items: center
+      justify-content: center
+    &__value
+      font-size: 1.5rem
+    &__label
+      font-size: 1rem
+      text-align: center
+  .cost-calc
+    &__container
+      background-image: none
+    &__wrap
+      flex-basis: 100%
+      max-width: 100%
+    &__input
+      &-group
+        flex-basis: 50%
+  .row
+    justify-content: center
+    align-items: center
+    padding-left: 0
+    padding-right: 0
+  .col-30
+    flex-basis: 100%
+  .cases
+    &__container
+      padding-left: 1rem
+      padding-right: 1rem
+    &__slider
+      padding-bottom: 1rem
+      &__image
+        &__container
+          margin-left: 1rem
+          margin-right: 1rem
+          height: 80vh
+  .card
+    &__services
+      width: 100%
+  .services
+    &__col
+      flex-basis: 100%
+  .reviews
+    &__section
+      padding-bottom: 2rem
+    &__slider
+      padding-bottom: 1rem
+      &__card
+        &__title
+          font-size: 1rem
+          line-height: 1.3rem
+          padding-bottom: 1rem
+  .news
+    &__slider
+      &__card
+        background: $light url('../img/news/bg-img-news.jpg') no-repeat center / cover
+    &__desc
+      padding: 1.5rem
+      &__title
+        margin-bottom: 1rem
+      &__text
+        margin-bottom: 1rem
+    &__img
+      display: none
+  .question
+    &__section
+      background-image: none
+    &__container
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding-top: 2rem
+    &__content
+      flex-basis: 100%
+      margin-right: 0
+    &__title
+      text-align: center
+    &__contacts
+      flex-direction: row
+      max-width: 100%
+      justify-content: center
+      &__addr
+        &__container
+          max-width: 100%
+          margin-bottom: 1rem
+      &__timetable
+        &__container
+          max-width: 100%
+        &__text
+          margin-bottom: 1rem
+    &__form
+      align-items: center
+    &__button
+      &--light
+        min-width: 11.875rem
+        min-height: 2.6875rem
+        border: 2px solid $primary
+        border-radius: 1.34375rem
+        text-align: center
+        font-family: 'Ubuntu', serif
+        font-weight: 500
+        font-size: 1em
+        color: $light
+        background-color: $primary
+        transition: background-color .3s
+        transition: color .3s
+        &:hover
+          box-sizing: border-box
+          cursor: pointer
+          border: 2px solid $primary
+          background-color: transparent
+          color: $primary
+  .menu
+    &__scroll
+      &__flex-block
+        padding-left: 0
+        padding-right: 0
+      &__container
+        padding-left: 1rem
+        padding-right: 1rem
+  .nav
+    &__container
+      display: flex
+      justify-content: flex-end
+      align-items: flex-end
+      width: 100%
+      
+
+  
+  
+// @media screen and ( max-width: 600px) 
+
+  
+
+@media screen and ( max-width: 576px)
+  .cases
+    &__slider
+      &__image
+        &__container
+          height: 30vh
+
+
+
+
+
+
+@media screen and (max-height: 700px)
+  .hero
+    &__content
+      padding-top: 5rem

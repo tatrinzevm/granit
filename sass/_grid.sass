@@ -1,0 +1,78 @@
+main
+  width: 100%
+  background-color: $light
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 0 auto
+  padding: 0
+
+
+.container
+  width: 100%
+  max-width: 940px
+
+.row
+  width: 100%
+  max-width: 940px
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  flex-wrap: wrap
+
+.col
+  &-30
+    display: flex
+    flex-basis: 33.3333%
+    &:nth-child(3n+1)
+      justify-content: flex-start
+    &:nth-child(3n+2)
+      justify-content: center
+    &:nth-child(3n+3)
+      justify-content: flex-end
+  &-25
+    display: flex
+    flex-basis: 25%
+    flex-direction: row
+    justify-content: flex-end
+/** .card
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  max-width: 22.1875rem
+  padding-top: 1rem
+  padding-bottom: 1rem
+  padding-left: 1.3rem
+  padding-right: 1.3rem
+  border: none
+  box-shadow: none
+  &__img
+    min-width: 2.5rem
+    min-height: 2.5rem
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: flex-end
+    margin-bottom: 1rem
+  &__title
+    font-family: 'Ubuntu', serif
+    font-size: 1.25rem
+    font-weight: 700
+    margin: 0
+    margin-bottom: 1.25rem
+  &__description
+    max-width: 19.5rem
+    font-family: 'Ubuntu', serif
+    font-size: 1rem
+    font-weight: 300
+    line-height: 1.375rem
+    word-spacing: -1px
+    text-align: center
+    color: #454646 **/
+
+
+
+
+

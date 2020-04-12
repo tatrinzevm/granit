@@ -1,0 +1,135 @@
+.hero
+  position: relative
+  width: 100%
+  background-color: $light
+  background: $dark url('../img/hero-bg-img.png') no-repeat center / cover
+  height: 100vh
+  max-height: 550px
+  color: $light
+  display: flex
+  flex-direction: row
+  justify-content: center
+  // &::after
+  //   content: ''
+  //   background-color: rgba($dark, 0.36)
+  //   position: absolute
+  //   left: 0
+  //   right: 0
+  //   top: 0
+  //   bottom: 0
+  &__aside
+    position: absolute
+    left: 3.5rem
+    top: 8.5rem
+    &::after
+      content: 'SEO'
+      text-transform: uppercase
+      color: #e3fbdd
+      font-size: 11rem
+      font-weight: 500
+      transform: rotate(-90deg)
+      position: absolute
+      left: 0rem
+      bottom: 2rem
+  &__container
+    width: 100%
+    background-origin: content-box
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    position: relative
+    margin-bottom: 4.5625rem
+  &__title
+    margin: 0
+  &__content
+    padding-top: 3rem
+    position: relative
+    width: 100%
+    max-width: 47.587rem
+    z-index: 199
+  &__text
+    font-family: 'Ubuntu', serif
+    font-size: 1.25rem
+    font-weight: 300
+    letter-spacing: 0
+    word-spacing: 0
+    max-width: 35.3rem
+    max-height: 6.9rem
+    line-height: 1.8125rem
+    color: $silver
+    margin: 0
+    margin-bottom: 3.1rem
+    overflow: hidden
+  &__button
+    margin-right: 1.2rem
+  &__instagram
+    max-width: 5.714rem
+    height: 100%
+  &__main-img
+    width: auto
+    height: 100%
+    &__container
+      position: absolute
+      top: 17%
+      left: 50%
+      width: 40vw
+      height: 64vh
+      max-width: 47.6875rem
+      max-height: 47.25rem
+
+.aside
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  height: 70vh
+  max-height: 48.625rem
+  z-index: 99
+  &__ico
+    max-width: 1.4375rem
+    max-height: 1.4375rem
+    position: relative
+    &:hover
+      cursor: pointer
+      left: -0.1875rem
+      top: -0.1875rem
+      max-width: 1.8125rem
+      max-height: 1.8125rem
+.red__line
+  content: ''
+  height: 100%
+  max-height: 50.4375rem
+  width: 4px
+  border-radius: 2px
+  background-color: $primary
+  margin-bottom: 2.375rem
+  margin-left: 3px
+.icons
+  height: 100%
+  max-height: 7.5rem
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.link
+  &__whatsapp
+    width: 1.375rem
+    height: 1.3125rem
+  &__viber
+    width: 1.3125rem
+    height: 1.4375rem
+  &__email
+    width: 1.25rem
+    height: 0.9375rem
+.title
+  max-width: 39rem
+  padding-bottom: 2.3rem
+  font-family: 'Ubuntu', serif
+  letter-spacing: -3px
+  word-spacing: -3px
+  font-size: 3.875rem
+  font-weight: 700
+  line-height: 122.58%
+  color: $gray
+  &--primary
+    color: $primary

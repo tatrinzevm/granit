@@ -1,0 +1,81 @@
+.services
+  background: $light url('../img/services-bg-img.jpg') no-repeat center / cover
+  padding-bottom: 3.875rem
+  padding-top: 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  position: relative
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 0
+  &__section-title
+    margin: 0
+    margin-bottom: 1rem
+    font-family: 'Ubuntu', serif
+    font-size: 2.625rem
+    font-weight: 700
+    color: #2c2c2d
+    &__text
+      margin: 0
+      margin-bottom: 3.5625rem
+      width: 100%
+      max-height: 2.7rem
+      max-width: 49.6875rem
+      overflow: hidden
+      font-family: 'Ubuntu', serif
+      font-size: 1rem
+      font-weight: 400
+      line-height: 1.375rem
+      color: #2c2c2d
+      text-align: center
+  &__col
+    min-height: 19.375rem
+.card
+  &__services
+    position: relative
+    margin-bottom: 2.375rem
+    align-items: flex-start
+    justify-content: space-between
+    width: 100%
+    max-width: 22.1875rem
+    min-height: 19.375rem
+    padding-top: 2.875rem
+    padding-bottom: 2.875rem
+    padding-left: 1.9375rem
+    padding-right: 1.9375rem
+    border: 1px solid #c9c8c8
+    border-radius: 5px
+    background-color: $light
+    box-shadow: none
+    &:hover
+      box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+      border: none
+      &::after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: -5px
+        width: 100%
+        height: 5px
+        border: none
+        border-radius: 0 0 5px 5px
+        background-color: $primary
+  &__title
+    &__services
+      font-size: 1.625rem
+      font-weight: 500
+      margin: 0
+      margin-bottom: 1.25rem
+      color: #2c2c2d
+  &__description
+    &__services
+      max-width: 19.5rem
+      line-height: 1.5831rem
+      word-spacing: -1px
+      text-align: left
+      color: #2c2c2d

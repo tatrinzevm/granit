@@ -1,0 +1,152 @@
+.question
+  &__section
+    margin: 0
+    background: $light url('../img/img-bg-question.jpg') no-repeat center / contain
+    background-position-x: 0.5rem
+    padding: 5.4rem 0 6.8rem 0
+  &__container
+    display: flex
+    justify-content: flex-start
+    width: 100%
+    max-width: 73.125rem
+    max-height: 55.375rem
+  &__content
+    height: 100%
+    max-height: 35.4375rem
+    flex-basis: 45%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    margin-right: 3rem
+  &__link
+    color: #1e1e1e
+    text-decoration: none
+    font-family: 'Ubuntu', serif
+    font-size: 1.125rem
+    font-weight: 300
+    line-height: 1.5
+    &:hover
+      text-decoration: underline
+      color: $primary
+    &--title
+      font-family: 'Ubuntu', serif
+      font-size: 2rem
+      font-weight: 500
+      color: #1e1e1e
+      &:hover
+        text-decoration: underline
+        color: $primary
+  &__contacts
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-start
+    width: 100%
+    &__addr
+      width: 100%
+      max-width: 6.8125rem
+      &__container
+        width: 100%
+        max-width: 13.6rem
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        margin-right: 2rem
+        padding: 0
+    &__title
+      font-family: 'Ubuntu', serif
+      font-size: 1.5rem
+      font-weight: 500
+      color: #1a1a1a
+      margin: 0 0 1.1rem 0
+    &__timetable
+      width: 100%
+      max-width: 12rem
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      &__title
+        font-family: 'Ubuntu', serif
+        font-size: 1.125rem
+        font-weight: 500
+        color: #1a1a1a
+        margin: 0
+      &__text
+        font-family: 'Ubuntu', serif
+        font-size: 1.125rem
+        font-weight: 300
+        color: #1a1a1a
+        margin: 0 0 1.7rem 0
+      &__time
+        font-family: 'Ubuntu', serif
+        font-size: 1.125rem
+        font-weight: 500
+        color: #1a1a1a
+        margin: 0
+
+  &__wrap
+    flex-basis: 50%
+    width: 100%
+    max-width: 34.25rem
+    padding: 0
+    padding-top: 1.5rem
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+  &__title
+    width: 100%
+    text-align: left
+    font-family: 'Ubuntu', serif
+    font-size: 2rem
+    font-weight: 500
+    color: #1e1e1e
+    line-height: 135%
+    letter-spacing: 1.5px
+    margin: 0 0 3rem 0
+  &__input-group
+    position: relative
+    width: 100%
+    display: flex
+    flex-direction: column
+    &:last-of-type
+      margin-bottom: 1.5rem
+  &__form
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    &__label
+      width: 100%
+      font-family: 'Ubuntu', serif
+      font-size: 1.125rem
+      font-weight: 300
+      color: #faf6f5
+      text-align: left
+      text-transform: uppercase
+      margin-bottom: 0.2rem
+  &__input
+    border: none
+    border-bottom: 1px solid #464544
+    border-radius: 0
+    color: #413f3e
+    padding: 0.3125rem 0
+    margin-bottom: 1.2rem
+  &__button
+    text-align: center
+    margin: auto
+    &--light
+    border: 1px solid $light
+    background-color: $light
+    color: $primary
+    margin: 0
+    &:hover
+      border: 1px solid $primary
+      background-color: $primary
+      color: $light
+      box-shadow: 0px 0px 30px inset rgba($light, .5)
+  

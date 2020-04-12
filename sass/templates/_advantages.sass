@@ -1,0 +1,83 @@
+.advantages
+  background-color: $light
+  padding-bottom: 0
+  padding-top: 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  position: relative
+  &__video
+    background: $light url('../img/bg-video.jpg') no-repeat center / cover
+    width: 100%
+    min-height: 39.5625rem
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 7.5rem
+    &-play
+      border-radius: 50%
+      width: 7.625rem
+      height: 7.625rem
+      transition: box-shadow 0.3s
+      &:hover
+        box-shadow: 0 0 10px 2px $light
+        cursor: pointer
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 5rem
+    padding-bottom: 6rem
+  &__section-title
+    margin: 0
+    margin-bottom: 1.6rem
+    font-family: 'Ubuntu', serif
+    font-size: 2.625rem
+    font-weight: 700
+    color: #2c2c2d
+    overflow: hidden
+    &__text
+      margin: 0
+      width: 100%
+      max-width: 50rem
+      font-family: 'Ubuntu', serif
+      font-size: 1rem
+      font-weight: 400
+      line-height: 1.375rem
+      color: #2c2c2d
+      text-align: center
+      padding-bottom: 3.1rem
+.indicators
+  z-index: 199
+  width: 100%
+  height: 100%
+  max-width: 73.0625rem
+  max-height: 20.1875rem
+  box-shadow: 0 0 22px 5px rgba(34, 34, 34, 0.05)
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-start
+  padding: 6.8rem 3.25rem 7rem 3.125rem
+  background: $light url('../img/bg-indicators.jpg') no-repeat center / cover
+  &__box
+    position: absolute
+    top: -7.5rem
+  &__card
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+  &__value
+    font-family: 'Ubuntu', serif
+    font-size: 3.875rem
+    font-weight: 700
+    color: $primary
+  &__label
+    font-family: 'Ubuntu', serif
+    font-size: 1.375rem
+    font-weight: 700
+    color: #383736

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  <title>GRANIT</title>
+</head>
+<body>
+  <!-- Yandex.Metrika counter -->
+  <!-- <script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(61659100, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+  </script> -->
+  <!-- end of Yandex.Metrika counter -->
+  <header class="header">
+    <div class="container header__container">
+      <div class="menu header__menu">
+        <a href="#home"><div class="logo menu__logo">
+          <img src="img/favicon.png" alt="logo" class="logo__img">
+          <p class="logo__mark">granit</p>
+        </div></a>
+        <div class="nav__container">
+          <nav class="nav menu__nav">
+            <a href="#promotion" class="nav__item">Продвижение</a>
+            <a href="#audit" class="nav__item">Аудит</a>
+            <a href="#prices" class="nav__item">Цены</a>
+            <a href="#contacts" class="nav__item">Контакты</a>
+          </nav>
+          <!-- /.nav -->
+        </div>
+        
+        <div class="contacts menu__contacts">
+          <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
+          <button class="button contacts__button" data-toggle='modal'>Заказать звонок</button>
+        </div>
+      </div>
+      
+      <!-- /.menu -->
+      <a href="#home"><div class="menu__logo--mobile">
+        <img src="img/favicon.png" alt="logo" class="menu__logo__img--mobile">
+      </div></a>
+      <div class="burger-menu">
+        <div class="burger-menu__line"></div>
+        <div class="burger-menu__line"></div>
+        <div class="burger-menu__line"></div>
+      </div>
+    </div>
+    <div class="burger__menu">
+      <a href="#home" class="burger__menu__item">Главная</a>
+      <a href="#promotion" class="burger__menu__item">Продвижение</a>
+      <a href="#audit" class="burger__menu__item">Аудит</a>
+      <a href="#prices" class="burger__menu__item">Цены</a>
+      <a href="#contacts" class="burger__menu__item">Контакты</a>
+      <a href="tel:+78129921030" class="burger__menu__item">+7(812)-992-10-30</a>
+      <button class="button contacts__button" data-toggle='modal'>Заказать звонок</button>
+    </div>
+    <!-- /.container -->
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="aside hero__aside">
+        <div class="red__line"></div>
+        <div class="icons">
+          <a href="https://web.whatsapp.com/send?phone=78129921030" class="link__whatsapp" target="_blank">
+            <img src="img/icons/whatsapp-primary.svg" alt="WhatsApp" title="Связаться с нами по WhatsApp" class="aside__ico">
+          </a>
+          <a href="viber://chat?number=+78129921030" class="link__viber" target="_blank">
+            <img src="img/icons/viber-pimary.svg" alt="Viber" title="Связаться с нами по Viber" class="aside__ico">
+          </a>
+          <a href="mailto:tatrinzevm@gmail.com" class="link__email" target="_blank">
+            <img src="img/icons/email-primary.svg" alt="Email" title="Связаться с нами по Email" class="aside__ico">
+          </a>
+        </div>
+        
+      </div>
+      <div class="hero__container">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="title hero__title">Продвижение Сайтов<br>
+              <span class="title--primary">в&nbsp;Санкт-Петербурге</span></h1>
+            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+            <button class="button hero__button button--primary" data-toggle='modal'>Обратный звонок</button>
+          </div>
+          <!-- /.hero__content -->
+          <div class="hero__main-img__container">
+            <img src="img/hero-main-img.png" alt="" class="hero__main-img">
+          </div>
+          
+        </div>
+        
+       </div>
+      <!-- /.container -->
+      
+    </section>
+    <!-- /.hero -->
+
+    <footer class="section footer footer__section">
+        <div class="container footer__container">
+          <div class="logo footer__logo">
+            <img src="img/favicon.png" alt="logo" class="logo__img footer__logo__img">
+            <p class="footer__logo__mark">SAYTSPB</p>
+          </div>
+          <div class="footer__horizontal-line"></div>
+          <div class="footer__copyrights">Copyright &copy; 2020. Glo Academy. Все права защищены</div>
+        </div>
+        <!-- /.container footer__container -->
+      </footer>
+      <!-- /.section footer__section -->
+
+
+  </main>
+
+  
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button>
+      <form action="send.php" method="POST" class="form modal__form" onsubmit="ym(61659100, 'reachGoal', 'modalFormSend'); return true;">
+        <input type="hidden" name="formName" value="modal">
+        <div class="input-group modal__input-group">
+          <input type="text" name="userName" class="input form__input modal__input--light" id="user-name" placeholder="Ваше имя" autocomplete="off">
+        </div>
+        <div class="input-group modal__input-group">
+          <input type="tel" name="userPhone" class="input form__input modal__input--light" id="user-phone" placeholder="Ваш номер телефона" autocomplete="off">
+        </div>
+        <button class="button button--primary modal__button">Отправить</button>
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="modal__success">
+    <div class="modal__container">
+      <h3 class="modal__text">Ваша заявка отправлена. Мы свяжемся с Вами в течение 10 минут.</h3>
+      <button class="button button--primary modal__button--OK">Понятно</button>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.success modal -->
+  <div class="modal__error">
+    <div class="modal__container">
+      <h3 class="modal__text">При отправке заявки произошла ошибка.</h3>
+      <button class="button button--primary modal__button--OK">Понятно</button>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.error modal -->
+  <div class="menu__scroll__flex-block menu__scroll__flex-block--hidden">
+    <div class="container menu__scroll__container">
+      <div class="menu menu__scroll">
+        <a href="#home"><div class="logo menu__logo">
+          <img src="img/favicon.png" alt="logo" class="logo__img">
+          <p class="logo__mark">SAYTSPB</p>
+        </div></a>
+        <div class="nav__container">
+          <nav class="nav menu__nav">
+            <a href="#promotion" class="nav__item">Продвижение</a>
+            <a href="#audit" class="nav__item">Аудит</a>
+            <a href="#prices" class="nav__item">Цены</a>
+            <a href="#contacts" class="nav__item">Контакты</a>
+          </nav>
+          <!-- /.nav -->
+        </div>
+        <div class="contacts menu__contacts">
+          <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
+          <button class="button contacts__button" data-toggle='modal'>Заказать звонок</button>
+        </div>
+      </div>
+      <!-- /.menu -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.button__flex-block -->
+  <div class="button__scroll-up__flex-block button__scroll-up__flex-block">
+    <div class="button__scroll-up__container">
+      <button class="button__scroll-up">Наверх</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

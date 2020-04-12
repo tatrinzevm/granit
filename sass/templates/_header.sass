@@ -1,0 +1,107 @@
+.header
+  width: 100%
+  max-height: 4.6875rem
+  background-color: transparent
+  padding: 0 5.71rem
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  z-index: 199
+  &__container
+    display: flex
+    justify-content: space-between
+  
+
+.menu
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 1,9375rem 0
+  &__logo
+    background-color: transparent
+    margin: 0
+    margin-right: 12.5rem
+    &:hover
+      text-shadow: 0px 5px 15px rgba($primary, .2)
+  &__nav
+    margin-left: 0rem
+  &__contacts
+    min-width: 26.9375rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+
+
+
+
+.logo
+  display: flex
+  flex-direction: row
+  margin: 0
+  padding: 0
+  justify-content: center
+  align-items: center
+  &__img
+    max-width: 2.563rem
+    max-height: 2.563rem
+    margin-right: 0.813rem
+  &__mark
+    font-family: 'Ubuntu', serif
+    font-size: 1.625rem
+    font-weight: 700
+    letter-spacing: 1.02px
+    color: $darkGray
+
+
+
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  max-width: 23.0625rem
+  &__container
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    width: 100%
+  &__item
+    position: relative
+    max-width: 23.0625rem
+    font-family: 'Ubuntu', serif
+    font-size: 1rem
+    font-weight: 300
+    font-size: 1rem
+    color: $darkGray
+    text-transform: uppercase
+    &:hover
+      &::after
+        content: ''
+        background-color: $primary
+        height: 2px
+        width: 100%
+        max-width: 4.6875rem
+        position: absolute
+        bottom: -0.375rem
+        left: 0
+        right: 0
+        margin: auto
+
+.phone
+  color: $darkGray
+  &:hover
+    text-shadow: 0px 5px 15px rgba($primary, .3)
+
+.contacts
+  &__phone
+    min-width: 9.5rem
+    margin-left: 2.75rem
+    font-family: 'Ubuntu', serif
+    font-size: 1.125rem
+    font-weight: 500
+    color: $darkGray
+  &__button
+    margin-right: 0

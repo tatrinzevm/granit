@@ -1,0 +1,204 @@
+button, input
+  &:active, &:focus
+    outline: none
+    
+.button
+  min-width: 11.875rem
+  min-height: 2.6875rem
+  border: 2px solid $primary
+  border-radius: 1.34375rem
+  text-align: center
+  font-family: 'Ubuntu', serif
+  font-weight: 500
+  font-size: 1em
+  color: $light
+  background-color: $primary
+  transition: background-color .3s
+  transition: color .3s
+  &:hover
+    box-sizing: border-box
+    cursor: pointer
+    border: 2px solid $primary
+    background-color: transparent
+    color: $primary
+  &--primary
+    width: 100%
+    height: 100%
+    max-width: 13.6875rem
+    max-height: 3.0625rem
+  &__scroll-up
+    width: auto
+    height: auto
+    padding: 0.5rem
+    font-family: 'Ubuntu', serif
+    background-color: #e3fbdd
+    &__container
+      width: 100vw
+    &__flex-block
+      position: fixed
+      left: 0
+      bottom: 0
+      display: flex
+      justify-content: center
+      z-index: 299
+      width: 100%
+      &--hidden
+        visibility: hidden
+  &__label
+    font-family: 'Futura Book', cursive
+    font-size: 1.071rem
+    display: flex
+    align-items: center
+    &::before
+      content: ''
+      width: 18px
+      height: 18px
+      border: 1px solid $primary
+      border-radius: 1px
+      cursor: pointer
+      margin-right: 0.64rem
+    &--center
+      justify-content: center
+.menu
+  &__scroll
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1,9375rem 0
+    &__flex-block
+      position: fixed
+      left: 0
+      top: 0
+      width: 100%
+      max-height: 4.6875rem
+      z-index: 399
+      background-color: rgba($light, 0.9)
+      padding: 0 5.71rem
+      display: flex
+      align-items: flex-start
+      justify-content: center
+      &--hidden
+        visibility: hidden
+    &__container
+      display: flex
+      justify-content: space-between
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 1,9375rem 0
+  &__logo
+    &__img
+      &--mobile
+        z-index: 3000
+        position: fixed
+        left: 1rem
+        top: 1rem
+        width: 50px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        &:hover
+          cursor: pointer
+  &__img
+    &--mobile
+      z-index: 301
+      width: 100%
+      height: 100%
+
+
+.label
+  font-size: 1.07rem
+  &--light
+    font-family: 'Futura Book', cursive
+    color: rgba($light, .5)
+
+.input
+  background-color: transparent
+  border: 1px solid #b1b0b0
+  border-radius: 10px
+  font-family: 'Ubuntu', serif
+  font-size: 1rem
+  line-height: 1rem
+  color: #878585
+  padding: 0.75rem 1.125rem
+
+.success
+  background-color: rgba($isValid, 0.1)
+.input.invalid
+  background-color: rgba($isInvalid, 0.1)
+
+
+.slider
+  &__button
+    width: 100%
+    height: 100%
+    max-width: 1.4375rem
+    max-height: 2.6875rem
+    transition: max-width 0.3s
+    transition: max-height 0.3s
+    &:hover
+      max-width: 2rem
+      max-height: 3.7391rem
+      cursor: pointer
+.burger-menu
+  z-index: 301
+  position: fixed
+  right: 1rem
+  top: 1rem
+  width: 50px
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  border-radius: 3px
+  border: 1px solid #38393b
+  box-shadow: 0 0 2px 0px #38393b
+  &:hover
+    cursor: pointer
+  &__line
+    transition: all 0.3s
+    width: 40px
+    margin: 5px
+    height: 4px
+    background-color: #38393b
+.first
+  transform: translate(8px, 2px) rotate(45deg)
+  transform-origin: left top
+.middle
+  transform: scale(0)
+.last
+  transform: translate(-3px, -26px) rotate(-45deg)
+  transform-origin: right bottom
+.burger
+  &__menu
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background-color: $light
+    width: 100vw
+    z-index: 300
+    position: fixed
+    left: -100vw
+    top: 0px
+    transition: all 0.5s
+    opacity: .95
+    padding-top: 2rem
+    padding-bottom: 2rem
+    &__item
+      font-family: 'Ubuntu', serif
+      font-size: 1.5rem
+      font-weight: 700
+      margin-bottom: 1rem
+      text-transform: uppercase
+      text-decoration: none
+      color: #38393b
+.menu-active
+  left: 0
+
+ 
